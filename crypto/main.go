@@ -46,3 +46,10 @@ func Decrypt(key, ciphertext []byte) ([]byte, error) {
 
 	return text, nil
 }
+
+func checkKeyLength(key string) ([]byte, error) {
+	if key == "" || (len(key) != 32 && len(key) != 16 && len(key) != 24) {
+		return nil, ErrorKeyInvalidLength
+	}
+	return []byte(key),nil
+}

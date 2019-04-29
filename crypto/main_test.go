@@ -7,7 +7,7 @@ import (
 
 var (
 	stubs = []string{"Hello World", "The Quick Brown Fox", "The difficult we do immediately; the impossible takes a little longer."}
-	key   = []byte("hDmPPK2b76ROBqd4uWQcu0ruUyz0tVXd")
+	key   = []byte("hDmPPK2b76ROBqdfbhdf4uWQcu0ruUyz0tVXd")
 )
 
 func TestEncryptDecrypt(t *testing.T) {
